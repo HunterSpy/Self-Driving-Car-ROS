@@ -28,8 +28,7 @@ target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBR
 add_dependencies(PriusHybridPlugin ${catkin_EXPORTED_TARGETS})
 
 
-catkin_install_python(PROGRAMS nodes/joystick_translator
-                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 
 install(TARGETS PriusHybridPlugin
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
